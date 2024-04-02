@@ -1,0 +1,85 @@
+#include<iostream>
+using namespace std;
+
+class Calculator{
+float N1,N2;
+float addition;
+float subtraction;
+float multiplication;
+float division;
+
+public:
+     Calculator(){
+
+    cout<<"ENTER THE FIRST NUMBER"<<endl;
+    cin>>N1;
+    cout<<"ENTER THE SECOND NUMBER"<<endl;
+    cin>>N2;
+    }
+    void add(){
+        addition=N1+N2;
+        cout<<"THE ADDITION OF TWO NUMBER IS "<<addition<<endl;
+    }
+void sub(){
+        addition=N1-N2;
+        cout<<"THE SUBTRACTION OF TWO NUMBER IS "<<subtraction<<endl;
+    }
+    void mul(){
+        multiplication=N1*N2;
+        cout<<"THE MULTIPLICATION OF TWO NUMBER IS "<<multiplication<<endl;
+    }
+    void div(){
+        division=N1/N2;
+        cout<<"THE DIVISION OF TWO NUMBER IS "<<division<<endl;
+    }
+
+
+};
+int main(){
+Calculator C1;
+int choice;
+cout<<"ENTER THE CHOICE 1:ADD 2:SUB 3:MUL 4:DIV"<<endl;
+cin>>choice;
+switch(choice){
+
+case 1:
+    cout<<"*****************************************"<<endl;
+    C1.add();
+      cout<<"***************************************"<<endl;
+    break;
+
+
+case 2:
+    cout<<"***************************************"<<endl;
+    C1.sub();
+ cout<<"***************************************"<<endl;
+
+    break;
+
+
+case 3:
+    cout<<"***************************************"<<endl;
+    C1.mul();
+    cout<<"***************************************"<<endl;
+    break;
+
+
+case 4:
+    cout<<"***************************************"<<endl;
+    C1.div();
+  cout<<"***************************************"<<endl;
+    break;
+
+default:
+    break;
+
+}
+return 0;
+
+
+}
+
+
+
+
+
